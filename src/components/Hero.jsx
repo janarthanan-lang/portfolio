@@ -25,17 +25,19 @@ const Hero = () => {
                     </p>
 
                     <div className="flex justify-center md:justify-start space-x-4">
-                        {resumeData.personalInfo.social.map((item, index) => (
-                            <a
-                                key={index}
-                                href={item.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-3 bg-secondary rounded-full text-accent hover:bg-accent hover:text-primary transition-all duration-300 shadow-lg hover:shadow-accent/50"
-                            >
-                                <item.icon size={24} />
-                            </a>
-                        ))}
+                        {resumeData.personalInfo.social.map((item, index) => {
+                            const isEmail = item.url.startsWith("mailto:");
+                            return (
+                                <a
+                                    key={index}
+                                    href={item.url}
+                                    {...(!isEmail && { target: "_blank", rel: "noopener noreferrer" })}
+                                    className="p-3 bg-secondary rounded-full text-accent hover:bg-accent hover:text-primary transition-all duration-300 shadow-lg hover:shadow-accent/50"
+                                >
+                                    <item.icon size={24} />
+                                </a>
+                            );
+                        })}
                     </div>
                 </motion.div>
 

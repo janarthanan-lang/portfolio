@@ -15,8 +15,10 @@ const Projects = () => {
                         <div className="p-8">
                             <div className="flex justify-between items-start mb-4">
                                 <div>
-                                    <h3 className="text-xl font-bold text-text group-hover:text-accent transition-colors">
-                                        {project.title}
+                                    <h3 className="text-xl font-bold">
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-text group-hover:text-accent transition-colors">
+                                            {project.title}
+                                        </a>
                                     </h3>
                                     <span className="text-sm text-accent font-medium">{project.date}</span>
                                 </div>

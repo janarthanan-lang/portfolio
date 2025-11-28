@@ -2,9 +2,9 @@ import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 
 export const resumeData = {
     personalInfo: {
-        name: "JANARTHANAN M",
-        title: "Data Analyst & Web Developer",
-        email: "m.janarthanan2005@gmail.com",
+        name: "Janarthanan Marimuthu",
+        title: "Data Analyst & Data Scientist",
+        email: "janamarimuthu2005@gmail.com",
         phone: "+91 8940500570",
         location: "Sathyamangalam, Tamil Nadu",
         social: [
@@ -20,7 +20,7 @@ export const resumeData = {
             },
             {
                 name: "Email",
-                url: "mailto:m.janarthanan2005@gmail.com",
+                url: "mailto:janamarimuthu2005@gmail.com",
                 icon: Mail
             }
         ]
@@ -40,14 +40,14 @@ export const resumeData = {
             date: "September - 2025",
             description: "Performed comprehensive Exploratory Data Analysis (EDA) on a laptop dataset, including data cleaning, feature understanding, and univariate, bivariate, and multivariate analysis using Python (Pandas, Matplotlib, Seaborn). Identified key pricing drivers such as RAM, CPU, GPU, Company brand, and Operating System.",
             technologies: ["Python", "Pandas", "Matplotlib", "Seaborn"],
-            link: "#"
+            link: "https://github.com/janarthanan-lang/Python-EDA-Project.git"
         },
         {
             title: "Employee Attrition Prediction Using ML",
             date: "November - 2025",
             description: "Performed data cleaning, preprocessing, encoding, and feature scaling on the IBM HR dataset. Trained and evaluated multiple Machine Learning models, identifying XGBoost as the best performer. Deployed the optimized model using Streamlit.",
             technologies: ["Python", "Scikit-Learn", "XGBoost", "Streamlit"],
-            link: "#"
+            link: "https://github.com/janarthanan-lang/IBM_Employee_Attrition_ML_Project.git"
         }
     ],
     certifications: [
