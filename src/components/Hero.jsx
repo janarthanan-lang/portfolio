@@ -21,7 +21,7 @@ const Hero = () => {
                         {resumeData.personalInfo.title}
                     </h3>
                     <p className="text-muted text-lg mb-8 max-w-lg mx-auto md:mx-0">
-                        {resumeData.summary}
+                        {resumeData.heroDescription}
                     </p>
 
                     <div className="flex justify-center md:justify-start space-x-4">
@@ -31,7 +31,8 @@ const Hero = () => {
                                 <a
                                     key={index}
                                     href={item.url}
-                                    {...(!isEmail && { target: "_blank", rel: "noopener noreferrer" })}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="p-3 bg-secondary rounded-full text-accent hover:bg-accent hover:text-primary transition-all duration-300 shadow-lg hover:shadow-accent/50"
                                 >
                                     <item.icon size={24} />

@@ -8,7 +8,12 @@ const Footer = () => {
                 <h2 className="text-2xl font-bold text-text mb-6">Let's Connect</h2>
 
                 <div className="flex flex-col items-center space-y-2 mb-8">
-                    <a href={`mailto:${resumeData.personalInfo.email}`} className="text-xl text-accent hover:underline font-medium">
+                    <a
+                        href={`mailto:${resumeData.personalInfo.email}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xl text-accent hover:underline font-medium"
+                    >
                         {resumeData.personalInfo.email}
                     </a>
                     <p className="text-muted">{resumeData.personalInfo.phone}</p>
@@ -17,12 +22,12 @@ const Footer = () => {
 
                 <div className="flex justify-center space-x-6 mb-8">
                     {resumeData.personalInfo.social.map((item, index) => {
-                        const isEmail = item.url.startsWith("mailto:");
                         return (
                             <a
                                 key={index}
                                 href={item.url}
-                                {...(!isEmail && { target: "_blank", rel: "noopener noreferrer" })}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="text-muted hover:text-accent transition-colors duration-300"
                             >
                                 <item.icon size={24} />

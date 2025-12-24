@@ -2,9 +2,9 @@ import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 
 export const resumeData = {
     personalInfo: {
-        name: "Janarthanan Marimuthu",
+        name: "Janarthanan M",
         title: "Data Analyst & Data Scientist",
-        email: "janamarimuthu2005@gmail.com",
+        email: "m.janarthanan2005@gmail.com",
         phone: "+91 8940500570",
         location: "Sathyamangalam, Tamil Nadu",
         social: [
@@ -20,12 +20,13 @@ export const resumeData = {
             },
             {
                 name: "Email",
-                url: "mailto:janamarimuthu2005@gmail.com",
+                url: "mailto:m.janarthanan2005@gmail.com",
                 icon: Mail
             }
         ]
     },
-    summary: "Highly motivated and detail-oriented Data Analyst with expertise in data analysis, visualization, reporting, and predictive modelling to enhance business insights. Experienced in delivering data-driven insights while collaborating with cross-functional teams. Currently pursuing Data Analytics and Data Science Trainee at KGiSL MicroCollege.",
+    heroDescription: "A passionate and detail-oriented aspiring Data Analyst and Data Scientist with hands-on experience in data cleaning, analysis, and visualization. I have worked on real-world projects such as expense tracking systems, Power BI dashboards, and machine learning models, where I analyzed data and generated meaningful insights. I enjoy working with tools like SQL, Python, Power BI, and machine learning techniques to transform raw data into actionable insights that support business decisions. I focus strongly on data accuracy, consistency, and clear reporting. My goal is to grow as a data professional, strengthen my analytical and modeling skills, and contribute to data-driven solutions that create real business impact.",
+    summary: "Highly-Motivated Data Scientist and Data Analyst with hands-on experience in Python, SQL, Excel, Power BI, Pandas, NumPy, Matplotlib, Seaborn, Machine Learning, and Statistical Analysis. Skilled in data cleaning, exploratory data analysis (EDA), feature engineering, model building, and data visualization to deliver actionable business insights. Passionate about applying data science techniques to solve real-world problems.",
     skills: {
         technical: [
             "Python", "Excel", "Power BI", "MySQL", "Statistical Analysis", "Machine Learning Algorithms"
@@ -48,6 +49,27 @@ export const resumeData = {
             description: "Performed data cleaning, preprocessing, encoding, and feature scaling on the IBM HR dataset. Trained and evaluated multiple Machine Learning models, identifying XGBoost as the best performer. Deployed the optimized model using Streamlit.",
             technologies: ["Python", "Scikit-Learn", "XGBoost", "Streamlit"],
             link: "https://github.com/janarthanan-lang/IBM_Employee_Attrition_ML_Project.git"
+        },
+        {
+            title: "Business Sales Analytics Dashboarding",
+            date: "December - 2025",
+            description: "Advanced Excel Sales Analysis Project using Superstore dataset. Performed data cleaning, calculated fields, pivot analysis, KPI tracking, What-If Analysis (Goal Seek & Scenario Manager), and macros automation. Built an interactive dashboard to derive actionable business insights and recommendations.",
+            technologies: ["Excel", "Data Analysis", "Dashboarding"],
+            link: "https://github.com/janarthanan-lang/Business-Sales-Analytics-Dashboarding-with-Advanced-Excel"
+        },
+        {
+            title: "Salary Survey Analysis",
+            date: "December - 2025",
+            description: "Analyzed a global salary survey dataset using Excel and MySQL. Data was cleaned by handling missing values, removing outliers, formatting text, and converting salaries to USD. SQL queries and dashboards reveal insights on salary trends across industries, countries, gender, education, and experience.",
+            technologies: ["Excel", "MySQL", "Data Analysis"],
+            link: "https://github.com/janarthanan-lang/Salary_Survey_Analysis_Project"
+        },
+        {
+            title: "RandomForest & AdaBoost Comparison",
+            date: "October - 2025",
+            description: "Machine learning project comparing Random Forest and AdaBoost classifiers on the Mushroom dataset to predict edible vs poisonous mushrooms. Includes data preprocessing, model training, evaluation, and accuracy comparison through visual plots.",
+            technologies: ["Python", "Machine Learning", "Scikit-Learn"],
+            link: "https://github.com/janarthanan-lang/RandomForest-And-Adaboost-Comparison"
         }
     ],
     certifications: [
@@ -63,6 +85,6 @@ export const resumeData = {
         }
     ],
     interests: [
-        "Cloud Platform", "Photography", "Generative AI", "Web Development"
+        "Photography", "Generative AI", "Web Development"
     ]
 };
